@@ -1,0 +1,33 @@
+{
+  "maintainer_email": "rodney@capsunlock.net",
+  "groupings": {
+  },
+  "recommendations": {
+  },
+  "description": "Installs and configures Alestic ppa",
+  "attributes": {
+  },
+  "suggestions": {
+  },
+  "license": "Apache 2.0",
+  "dependencies": {
+  },
+  "platforms": {
+    "ubuntu": [
+
+    ]
+  },
+  "conflicting": {
+  },
+  "version": "0.0.4",
+  "long_description": "",
+  "providing": {
+  },
+  "name": "alestic_ppa",
+  "recipes": {
+    "mongodb": "Installs and configures alestic ppa"
+  },
+  "maintainer": "Capsunlock.Net ",
+  "replacing": {
+  }
+}
