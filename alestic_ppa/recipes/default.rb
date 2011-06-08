@@ -19,6 +19,7 @@ execute  "echo 'deb http://ppa.launchpad.net/alestic/ppa/ubuntu #{codename} main
   	notifies :run, resources(:execute => "apt-get update"), :immediately
 end
 
+# test this on ec2
 package "ec2-consistent-snapshot" do 
  	action :install
 end
