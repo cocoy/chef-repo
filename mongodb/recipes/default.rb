@@ -24,10 +24,3 @@ end
 package "mongodb-10gen" do 
  	action :install
 end
-
-
-
-
-
-
-
