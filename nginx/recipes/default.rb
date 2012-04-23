@@ -17,22 +17,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-#
-include_recipe "apt" 
 
-# add the Nginx PPA; grab key from keyserver
-apt_repository "nginx-php" do
-	#uri "http://ppa.launchpad.net/nginx/php5/ubuntu"
-	uri "http://ppa.launchpad.net/nginx/stable/ubuntu"
-	distribution node['lsb']['codename']
-	components ["main"]
-	keyserver "keyserver.ubuntu.com"
-	key "C300EE8C"
-	action :add
-end
-
-package "nginx"  
-
+package "nginx"
 
 directory node[:nginx][:log_dir] do
   mode 0755
