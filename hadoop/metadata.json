@@ -1,0 +1,34 @@
+{
+  "name": "hadoop",
+  "description": "Installs/Configures hadoop",
+  "long_description": "= DESCRIPTION:\n\nHadoop chef cookbook to install hadoop from source or cloudera repository.\n",
+  "maintainer": "Robin Wenglewski",
+  "maintainer_email": "robin@wenglewski.de",
+  "license": "All rights reserved",
+  "platforms": {
+    "ubuntu": ">= 0.0.0"
+  },
+  "dependencies": {
+    "[\"apt\", \"java\"]": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "hadoop": "same as hadoop::cloudera",
+    "hadoop::source": "installs hadoop from source",
+    "hadoop::cloudera": "installs hadoop from the cloudera repository"
+  },
+  "version": "0.0.1"
+}
